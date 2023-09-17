@@ -3,34 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio website</title>
+    <title>Tech Solutions Inc.</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="header">
-       <h6>Home</h6>
-       <h6>Projects</h6>
-       <h6>About Me</h6>
+    <header>
+        <nav>
+            <div class="logo">Tech Solutions Inc.</div>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <section class="hero">
+        <h1>Welcome to Tech Solutions Inc.</h1>
+        <p>Your trusted partner in technology consulting.</p>
+        <a href="#contact" class="cta-button">Contact Us</a>
+    </section>
 
-    </div>
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+        <div class="service">
+            <h3>IT Strategy Consulting</h3>
+            <p>We provide expert IT strategy consulting to help your business thrive in the digital age.</p>
+        </div>
+        <div class="service">
+            <h3>Web Development</h3>
+            <p>Our talented team can create stunning and functional websites tailored to your needs.</p>
+        </div>
+        <div class="service">
+            <h3>Cloud Solutions</h3>
+            <p>Harness the power of the cloud with our custom cloud solutions for businesses of all sizes.</p>
+        </div>
+    </section>
 
-    <hr>
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>We are a team of experienced technology consultants dedicated to helping businesses succeed.</p>
+    </section>
 
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>Have a question or need assistance? Contact us today!</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
 
-    <div class="body">
-      <p>Portfolio website</p>
-      <img src="">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
-    </div>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
 
+            <button type="submit">Submit</button>
+        </form>
+    </section>
 
-
-    <div class="footer">
-        <p>...Looking forward to more opportunities</p>
-
-    </div>
-
-
-
+    <footer>
+        <p>&copy; 2023 Tech Solutions Inc. | All rights reserved.</p>
+    </footer>
 </body>
 </html>
